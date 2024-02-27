@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            padding-right: 25px;
+            text-decoration: none;
+            color: rebeccapurple;
+        }
+
+        #hd {
+            background-color: plum;
+            color: red;
+        }
+        body{
+        background-image: url(stupi.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body style="background-color: bisque;">
+    <div id="hd">
+        <center><h3>STUDENT INFORMATION</center>
+        <hr>
+        <div id="nav"><center><b>
+            <a href="Home.html">Home</a>
+            <a href="New_Student.html">New Student</a>
+            <a href="Update.html">Modify Student</a>
+            <a href="Remove.html">Remove Student</a>
+            <a href="Read.php">View Student</a>
+        </div></center></div>
+    </div>
+    <center>
+        <form action="update.php" method="post">
+            <h3>Modified Student 
+                <hr>
+            </h3>
+            Student ID      : <input type="text" name="sid"> <br><br>
+            Student Name    : <input type="text" name="sname"> <br><br>
+            Student Phone   : <input type="text" name="sphone"> <br><br>
+            Student Address : <input type="text" name="saddr"> <br><br>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+
+</html>
